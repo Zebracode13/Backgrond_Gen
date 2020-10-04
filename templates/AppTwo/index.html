@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/images/apple-icon-180x180.png">
+    <!-- <link href="./static/assets/images/favicon.ico" rel="icon"> -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+</head>
+<body id="gradeient">
+
+    <div>
+        <nav id="gradeient" class="nav flex-column nav-pills">
+            <ul>
+                <button><a class="nav-item nav-link" href="{% url 'index' %}">Home</a></button>
+                <button><a class="nav-item nav-link" href="{% url 'AppTwo:other' %}">Companies</a></button>
+                <button><a class="nav-item nav-link" href="{% url 'users' %}">Login</a></button>
+                <button><a class="nav-item nav-link" href="{% url 'AppTwo:relative' %}">Products</a></button>
+                <button><a class="nav-item nav-link disabled" href="{% url 'admin:index' %}">Django admin</a></button>
+            </ul>  
+        </nav>
+    </div>
+    <div >
+        <h1>Creating a Background Using JavaSctipt</h1>
+        <h2>Change color to find what you like:</h2>
+        <input class="color1" type="color" name="color1" value="#00ff00">
+        <input  class="color2" type="color" name="color2" value="#ff0000">
+        <h2>Here is your Gradeint background</h2>
+    <div/>   
+</body>
+<body id="gradeient">
+    <div id="gradeient" class="container">
+        <div class="jumbotron">
+            <h1 class="sucess">Welcome Back!</h1>
+            <h3>to login got to login page</h3>
+            <img src="{% static "images/taza.png" %}" alt="Hi!">
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>This where I am from</h1>
+                <img src="{% static "images/ethio.png" %}" alt="">
+            </div>c
+        </div>
+    <script src="{% static "scripts/script.js" %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
