@@ -5,6 +5,11 @@ from . forms import NewUsersLogin, NewCompany
 def index(request):
     return render(request, "AppTwo/index.html")
 
+
+def template(request):
+    return render(request "AppTwo/template.html"
+
+
 def other(request):
 
     comp = NewCompany()
