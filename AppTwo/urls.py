@@ -6,4 +6,5 @@ app_name = 'AppTwo'
 urlpatterns = [
     path('relate/', views.relative, name='relative' ),
     path('other/', views.other, name='other'),
+    path('temp/', views.template, name='temp')
 ]
