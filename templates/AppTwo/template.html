@@ -10,6 +10,7 @@
   For business & inquires, contact me -> jacobojavier98@gmail.com
 -->
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -30,6 +31,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{% static "scripts/sr.js" %}"></script>
+    <script src="{% static "scripts/index.js" %}"></script>
+    <script src="{% static "scripts/lilt.js" %}"></script>
+
     <script>
       ScrollReveal({ reset: false });
     </script>
@@ -70,9 +75,8 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="./assets/profile.jpg"
-                alt="Profile Image"
-              />
+                src="{% static "images/profile.jpg" %}"
+                alt="Profile Image"/>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
@@ -234,6 +238,7 @@
         </div>
       </div>
     </section>
+</body>
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->

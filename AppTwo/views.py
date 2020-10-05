@@ -7,8 +7,7 @@ def index(request):
 
 
 def template(request):
-    return render(request "AppTwo/template.html"
-
+    return render(request, "AppTwo/template.html")
 
 def other(request):
 
